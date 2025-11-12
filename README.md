@@ -127,19 +127,7 @@ Basic format:
   "relationships": []
 }
 
-================================================================================
-                         COST & PERFORMANCE
-================================================================================
 
-Typical costs:
-  Small (1 KB):   ~0.0001 SOL (~$0.02)
-  Medium (10 KB): ~0.001 SOL  (~$0.20)
-  Large (100 KB): ~0.01 SOL   (~$2.00)
-
-Performance:
-  Upload:   2-5 seconds
-  Download: 2-3 seconds
-  Search:   Instant (local index)
 
 ================================================================================
                          SECURITY
@@ -165,16 +153,6 @@ Performance:
 "Memory not found"
   - Run sync to update local index
   - Check memory ID is correct
-
-================================================================================
-                         SUPPORT
-================================================================================
-
-For issues:
-  - Test with small data first
-  - Run option [10] Test All Features
-  - Verify wallet has enough SOL
-  - Check RPC connection
 
 
 ### Interactive CLI
@@ -266,17 +244,6 @@ Supported formats: Any file type, any size (chunked automatically)
 - Downloads missing memories to local cache
 - Enables multi-device synchronization
 
-## Cost & Performance
-
-### Typical Costs
-- Small memory (1 KB): ~0.0001 SOL (~$0.02)
-- Medium memory (10 KB): ~0.001 SOL (~$0.20)
-- Large memory (100 KB): ~0.01 SOL (~$2.00)
-
-### Performance
-- Upload: 2-5 seconds per memory
-- Download: 2-3 seconds per memory
-- Search: Instant (local index)
 
 ## Requirements
 
@@ -299,13 +266,6 @@ Or set via environment:
 ```bash
 export SOLANA_RPC_URL="https://your-rpc-endpoint"
 ```
-
-## Security
-
-- Private keys stored locally only
-- Never commit wallet files to git
-- Use `.gitignore` to protect sensitive data
-- On-chain data is public and immutable
 
 ## Testing
 
@@ -413,12 +373,6 @@ This is a production-ready tool for storing Cognee memories on Solana blockchain
 
 MIT
 
-## Support
-
-For issues or questions:
-- Check QUICKSTART.md for common tasks
-- Review INDEX.md for file reference
-- Test with small data first
 
 ## Acknowledgments
 

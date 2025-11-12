@@ -217,6 +217,10 @@ class IQLabsAPI {
     async signAndSendTransaction(transactionData, wallet, retries = 3) {
         for (let attempt = 1; attempt <= retries; attempt++) {
             try {
+                // Check if transactionData is undefined or null
+                if (!transactionData) {
+                    throw new Error('Transaction data is undefined or null - API may not have returned transaction');
+                }
                 let tx;
                 // Check if input is a transaction object or base64 string
                 if (typeof transactionData === 'string') {

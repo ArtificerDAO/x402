@@ -136,9 +136,9 @@ class SyncableMemoryIndex extends LocalMemoryIndex_1.LocalMemoryIndex {
      * Discovers new memories and adds them to local cache
      */
     async sync(options = {}) {
-        console.log('\n╔════════════════════════════════════════════════════════╗');
-        console.log('║  SYNCING WITH PINOCCHIO (ON-CHAIN)                     ║');
-        console.log('╚════════════════════════════════════════════════════════╝\n');
+        console.log('\n========================================================');
+        console.log('  SYNCING WITH PINOCCHIO (ON-CHAIN)');
+        console.log('========================================================\n');
         const lastSync = this.getLastSyncTime();
         if (lastSync) {
             console.log(`📅 Last sync: ${lastSync.toLocaleString()}`);
@@ -224,9 +224,9 @@ class SyncableMemoryIndex extends LocalMemoryIndex_1.LocalMemoryIndex {
         }
         // Save sync time
         this.saveLastSyncTime();
-        console.log('╔════════════════════════════════════════════════════════╗');
-        console.log('║  SYNC COMPLETE                                         ║');
-        console.log('╚════════════════════════════════════════════════════════╝\n');
+        console.log('========================================================');
+        console.log('  SYNC COMPLETE');
+        console.log('========================================================\n');
         console.log(` Results:`);
         console.log(`   Discovered: ${result.discovered}`);
         console.log(`   Added: ${result.added}`);

@@ -5,8 +5,15 @@
  * Production-grade interface with advanced features
  */
 
+// Clear module cache to ensure fresh load
+Object.keys(require.cache).forEach(key => {
+  if (key.includes('/dist/')) {
+    delete require.cache[key];
+  }
+});
+
 const { Connection, Keypair } = require('@solana/web3.js');
-const { CogneeMemoryAdapter } = require('../dist/adapters/CogneeMemoryAdapter');
+const { CogneeMemoryAdapter } = require('./dist/adapters/CogneeMemoryAdapter');
 const fs = require('fs');
 const path = require('path');
 const readline = require('readline');

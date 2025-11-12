@@ -22,12 +22,12 @@ class LargeDataStorage {
      */
     async storeLargeData(data, useSequential = false) {
         const startTime = Date.now();
-        console.log('\n╔════════════════════════════════════════════════════════╗');
-        console.log('║  STORING LARGE DATA VIA PINOCCHIO                      ║');
-        console.log('╚════════════════════════════════════════════════════════╝\n');
+        console.log('\n========================================================');
+        console.log('  STORING LARGE DATA VIA PINOCCHIO');
+        console.log('========================================================\n');
         const originalSize = data.length;
         console.log(` Original data size: ${originalSize} bytes`);
-        console.log(`👛 Wallet: ${this.wallet.publicKey.toBase58()}`);
+        console.log(` Wallet: ${this.wallet.publicKey.toBase58()}`);
         console.log(`  Mode: ${useSequential ? 'Sequential' : 'Parallel'}`);
         // Chunk the data ourselves into 675-byte pieces!
         // CRITICAL: Do NOT base64 encode - send raw string chunks, API will base64 encode each!
@@ -61,6 +61,12 @@ class LargeDataStorage {
         // Step 2: Create session on-chain
         console.log(' Step 2/4: Creating session on-chain...');
         try {
+            // Check if createSessionTransaction exists
+            if (!session.createSessionTransaction) {
+                console.error('    ERROR: createSessionTransaction is missing from API response!');
+                console.error('    API Response:', JSON.stringify(session, null, 2));
+                throw new Error('createSessionTransaction is undefined - API response format may have changed');
+            }
             const createSig = await this.api.signAndSendTransaction(session.createSessionTransaction, this.wallet);
             signatures.push(createSig);
             console.log(`    Session created: ${createSig.substring(0, 16)}...`);
@@ -142,9 +148,9 @@ class LargeDataStorage {
         }
         const duration = ((Date.now() - startTime) / 1000).toFixed(2);
         console.log('');
-        console.log('╔════════════════════════════════════════════════════════╗');
-        console.log('║   UPLOAD COMPLETE!                                   ║');
-        console.log('╚════════════════════════════════════════════════════════╝');
+        console.log('========================================================');
+        console.log('  UPLOAD COMPLETE!');
+        console.log('========================================================');
         console.log('');
         console.log(`   Session PDA: ${sessionPubkey}`);
         console.log(`   Total signatures: ${signatures.length}`);
@@ -177,9 +183,9 @@ class LargeDataStorage {
      */
     async retrieveLargeData(sessionPubkey, maxRetries = 5, retryDelay = 2000) {
         const startTime = Date.now();
-        console.log('\n╔════════════════════════════════════════════════════════╗');
-        console.log('║  RETRIEVING LARGE DATA FROM HYBRID V2                  ║');
-        console.log('╚════════════════════════════════════════════════════════╝\n');
+        console.log('\n========================================================');
+        console.log('  RETRIEVING LARGE DATA FROM HYBRID V2');
+        console.log('========================================================\n');
         console.log(` Session PDA: ${sessionPubkey}`);
         console.log('');
         // Retry loop for finalization timing
@@ -212,9 +218,9 @@ class LargeDataStorage {
                 console.log(`    Downloaded: ${finalData.length} bytes`);
                 const duration = ((Date.now() - startTime) / 1000).toFixed(2);
                 console.log('');
-                console.log('╔════════════════════════════════════════════════════════╗');
-                console.log('║   RETRIEVAL COMPLETE!                                ║');
-                console.log('╚════════════════════════════════════════════════════════╝');
+                console.log('========================================================');
+                console.log('  RETRIEVAL COMPLETE!');
+                console.log('========================================================');
                 console.log('');
                 console.log(`   Final data size: ${finalData.length} bytes`);
                 console.log(`   Duration: ${duration}s`);

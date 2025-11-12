@@ -1,0 +1,87 @@
+{
+  "memory_id": "mem_eigen_defi_1762811724935",
+  "user_id": "eigen_comprehensive_test",
+  "memory_type": "document",
+  "tags": [
+    "eigen-ai",
+    "defi",
+    "auto-extracted"
+  ],
+  "created_at": "2025-11-10T21:55:24.935Z",
+  "updated_at": "2025-11-10T21:55:24.935Z",
+  "chunks": [
+    {
+      "chunk_id": "chunk_defi_1762811724935",
+      "text": "Decentralized Finance (DeFi) revolutionizes traditional banking by using blockchain technology. DeFi protocols enable lending, borrowing, and trading without intermediaries. Uniswap is a popular DeFi exchange built on Ethereum.",
+      "chunk_index": 0,
+      "embedding": [],
+      "metadata": {
+        "extracted_by": "eigen-ai",
+        "model": "gpt-oss-120b-f16",
+        "document_title": "DeFi"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "ent_1",
+      "name": "Decentralized Finance (DeFi)",
+      "type": "Concept",
+      "description": "Financial system using decentralized blockchain tech."
+    },
+    {
+      "entity_id": "ent_2",
+      "name": "traditional banking",
+      "type": "Concept",
+      "description": "Conventional banking with intermediaries."
+    },
+    {
+      "entity_id": "ent_3",
+      "name": "blockchain technology",
+      "type": "Technology",
+      "description": "Distributed ledger enabling trustless transactions."
+    },
+    {
+      "entity_id": "ent_4",
+      "name": "DeFi protocols",
+      "type": "Technology",
+      "description": "Smart‑contract services for lending, borrowing, trading."
+    },
+    {
+      "entity_id": "ent_5",
+      "name": "Uniswap",
+      "type": "Organization",
+      "description": "Popular decentralized exchange built on Ethereum."
+    },
+    {
+      "entity_id": "ent_6",
+      "name": "Ethereum",
+      "type": "Technology",
+      "description": "Blockchain platform supporting smart contracts and DeFi."
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_1",
+      "source_id": "ent_1",
+      "target_id": "ent_2",
+      "relationship_name": "revolutionizes",
+      "confidence": 0.99
+    },
+    {
+      "relationship_id": "rel_2",
+      "source_id": "ent_1",
+      "target_id": "ent_3",
+      "relationship_name": "uses",
+      "confidence": 0.98
+    },
+    {
+      "relationship_id": "rel_3",
+      "source_id": "ent_5",
+      "target_id": "ent_6",
+      "relationship_name": "built_on",
+      "confidence": 0.99
+    }
+  ],
+  "embeddings": []
+}

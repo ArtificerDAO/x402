@@ -1,0 +1,262 @@
+{
+  "memory_id": "mem_1762805546327_baejextre",
+  "user_id": "alice",
+  "created_at": "2025-11-10T20:12:26.329Z",
+  "updated_at": "2025-11-10T20:12:26.329Z",
+  "memory_type": "technical_article",
+  "tags": [
+    "blockchain",
+    "solana",
+    "crypto"
+  ],
+  "source": "upload",
+  "chunks": [
+    {
+      "chunk_id": "chunk_mem_1762805546327_baejextre_0",
+      "text": "Solana is a high-performance blockchain platform.",
+      "chunk_index": 0,
+      "chunk_size": 49,
+      "cut_type": "sentence",
+      "metadata": {
+        "position": 0,
+        "source": "upload",
+        "timestamp": "2025-11-10T20:12:26.327Z"
+      }
+    },
+    {
+      "chunk_id": "chunk_mem_1762805546327_baejextre_1",
+      "text": "It uses Proof of History consensus.",
+      "chunk_index": 1,
+      "chunk_size": 36,
+      "cut_type": "sentence",
+      "metadata": {
+        "position": 1,
+        "source": "upload",
+        "timestamp": "2025-11-10T20:12:26.328Z"
+      }
+    },
+    {
+      "chunk_id": "chunk_mem_1762805546327_baejextre_2",
+      "text": "The network processes 65,000 transactions per second.",
+      "chunk_index": 2,
+      "chunk_size": 54,
+      "cut_type": "sentence",
+      "metadata": {
+        "position": 2,
+        "source": "upload",
+        "timestamp": "2025-11-10T20:12:26.328Z"
+      }
+    },
+    {
+      "chunk_id": "chunk_mem_1762805546327_baejextre_3",
+      "text": "Solana enables fast and cheap DeFi applications.",
+      "chunk_index": 3,
+      "chunk_size": 49,
+      "cut_type": "sentence",
+      "metadata": {
+        "position": 3,
+        "source": "upload",
+        "timestamp": "2025-11-10T20:12:26.328Z"
+      }
+    },
+    {
+      "chunk_id": "chunk_mem_1762805546327_baejextre_4",
+      "text": "Ethereum is another blockchain but slower than Solana.",
+      "chunk_index": 4,
+      "chunk_size": 55,
+      "cut_type": "sentence",
+      "metadata": {
+        "position": 4,
+        "source": "upload",
+        "timestamp": "2025-11-10T20:12:26.328Z"
+      }
+    },
+    {
+      "chunk_id": "chunk_mem_1762805546327_baejextre_5",
+      "text": "Web3 is the future of the internet.",
+      "chunk_index": 5,
+      "chunk_size": 36,
+      "cut_type": "sentence",
+      "metadata": {
+        "position": 5,
+        "source": "upload",
+        "timestamp": "2025-11-10T20:12:26.329Z"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_0",
+      "name": "solana",
+      "type": "Concept",
+      "description": "Concept extracted from text: solana",
+      "metadata": {
+        "frequency": 1,
+        "position": 0,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_1",
+      "name": "blockchain",
+      "type": "Concept",
+      "description": "Concept extracted from text: blockchain",
+      "metadata": {
+        "frequency": 1,
+        "position": 4,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_2",
+      "name": "solana",
+      "type": "Concept",
+      "description": "Concept extracted from text: solana",
+      "metadata": {
+        "frequency": 1,
+        "position": 19,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_3",
+      "name": "defi",
+      "type": "Concept",
+      "description": "Concept extracted from text: defi",
+      "metadata": {
+        "frequency": 1,
+        "position": 24,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_4",
+      "name": "ethereum",
+      "type": "Concept",
+      "description": "Concept extracted from text: ethereum",
+      "metadata": {
+        "frequency": 1,
+        "position": 26,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_5",
+      "name": "blockchain",
+      "type": "Concept",
+      "description": "Concept extracted from text: blockchain",
+      "metadata": {
+        "frequency": 1,
+        "position": 29,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_6",
+      "name": "solana",
+      "type": "Concept",
+      "description": "Concept extracted from text: solana",
+      "metadata": {
+        "frequency": 1,
+        "position": 33,
+        "confidence": 0.9
+      }
+    },
+    {
+      "entity_id": "entity_mem_1762805546327_baejextre_7",
+      "name": "web3",
+      "type": "Concept",
+      "description": "Concept extracted from text: web3",
+      "metadata": {
+        "frequency": 1,
+        "position": 34,
+        "confidence": 0.9
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_0",
+      "target_id": "entity_mem_1762805546327_baejextre_1",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    },
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_1",
+      "target_id": "entity_mem_1762805546327_baejextre_2",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    },
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_2",
+      "target_id": "entity_mem_1762805546327_baejextre_3",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    },
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_3",
+      "target_id": "entity_mem_1762805546327_baejextre_4",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    },
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_4",
+      "target_id": "entity_mem_1762805546327_baejextre_5",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    },
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_5",
+      "target_id": "entity_mem_1762805546327_baejextre_6",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    },
+    {
+      "source_id": "entity_mem_1762805546327_baejextre_6",
+      "target_id": "entity_mem_1762805546327_baejextre_7",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8,
+        "type": "semantic",
+        "created_at": "2025-11-10T20:12:26.329Z"
+      }
+    }
+  ],
+  "metadata": {
+    "type": "technical_article",
+    "tags": [
+      "blockchain",
+      "solana",
+      "crypto"
+    ],
+    "source": "upload",
+    "title": "Blockchain Performance Comparison",
+    "total_tokens": 41,
+    "processing_time": 598.712831026569,
+    "version": "1.0.0"
+  }
+}

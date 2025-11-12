@@ -1,0 +1,41 @@
+{
+  "memory_id": "final-test-1762904890423",
+  "user_id": "final-test-user",
+  "memory_type": "test",
+  "tags": [
+    "final-test",
+    "verification"
+  ],
+  "created_at": "2025-11-11T23:48:10.423Z",
+  "chunks": [
+    {
+      "chunk_id": "final-test-1762904890423-chunk-1",
+      "text": "Final verification test for production deployment.",
+      "index": 0
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "final-test-1762904890423-entity-1",
+      "name": "Production",
+      "type": "status",
+      "description": "Production deployment status"
+    },
+    {
+      "entity_id": "final-test-1762904890423-entity-2",
+      "name": "Verification",
+      "type": "process",
+      "description": "Final verification process"
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "final-test-1762904890423-entity-1",
+      "target_id": "final-test-1762904890423-entity-2",
+      "relationship_name": "REQUIRES",
+      "properties": {
+        "confidence": 1
+      }
+    }
+  ]
+}

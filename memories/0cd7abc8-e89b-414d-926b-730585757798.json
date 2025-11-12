@@ -1,0 +1,51 @@
+{
+  "memory_id": "0cd7abc8-e89b-414d-926b-730585757798",
+  "user_id": "production_user",
+  "created_at": "2025-11-10T20:05:54.709Z",
+  "updated_at": "2025-11-10T20:05:54.710Z",
+  "memory_type": "technical_document",
+  "tags": [
+    "solana",
+    "blockchain",
+    "performance",
+    "technology"
+  ],
+  "chunks": [
+    {
+      "chunk_id": "693944e6-fcf8-4207-831d-1a96f84d3a7a",
+      "text": "Solana is a high-performance blockchain designed for decentralized applications and crypto-currencies.\nIt uses a unique Proof of History (PoH) consensus mechanism combined with Proof of Stake (PoS).\nThe network can process up to 65,000 transactions per second with block times of 400 milliseconds.\nSolana's architecture enables low transaction costs, typically less than $0.01 per transaction.",
+      "chunk_index": 0,
+      "chunk_size": 393,
+      "cut_type": "sentence",
+      "metadata": {
+        "source": "test"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "70a46f78-825b-4808-b847-40f071226dbb",
+      "name": "Solana",
+      "type": "Concept",
+      "description": "Concept from text: Solana",
+      "metadata": {}
+    },
+    {
+      "entity_id": "9d170049-95c2-4485-b435-d5cec2e06652",
+      "name": "high-performance",
+      "type": "Concept",
+      "description": "Concept from text: high-performance",
+      "metadata": {}
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "70a46f78-825b-4808-b847-40f071226dbb",
+      "target_id": "9d170049-95c2-4485-b435-d5cec2e06652",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8
+      }
+    }
+  ]
+}

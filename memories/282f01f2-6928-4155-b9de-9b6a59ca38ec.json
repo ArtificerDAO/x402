@@ -1,0 +1,49 @@
+{
+  "memory_id": "282f01f2-6928-4155-b9de-9b6a59ca38ec",
+  "user_id": "alice",
+  "created_at": "2025-11-10T19:14:50.030Z",
+  "updated_at": "2025-11-10T19:14:50.030Z",
+  "memory_type": "document",
+  "tags": [
+    "test",
+    "onchain"
+  ],
+  "chunks": [
+    {
+      "chunk_id": "89253e23-0e18-4180-b228-5815acfe6ad9",
+      "text": "Solana is a fast blockchain",
+      "chunk_index": 0,
+      "chunk_size": 27,
+      "cut_type": "sentence",
+      "metadata": {
+        "source": "test"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "7f7a7c6a-5ad0-49a4-82c9-408fe0959195",
+      "name": "Solana",
+      "type": "Concept",
+      "description": "Concept from text: Solana",
+      "metadata": {}
+    },
+    {
+      "entity_id": "1f99e178-8f17-429a-b133-7b87875b4db0",
+      "name": "fast",
+      "type": "Concept",
+      "description": "Concept from text: fast",
+      "metadata": {}
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "7f7a7c6a-5ad0-49a4-82c9-408fe0959195",
+      "target_id": "1f99e178-8f17-429a-b133-7b87875b4db0",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8
+      }
+    }
+  ]
+}

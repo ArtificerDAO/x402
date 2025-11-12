@@ -1,0 +1,42 @@
+{
+  "memory_id": "example-memory-001",
+  "user_id": "user-123",
+  "memory_type": "document",
+  "tags": ["example", "test"],
+  "created_at": "2025-11-11T00:00:00.000Z",
+  "chunks": [
+    {
+      "chunk_id": "chunk-1",
+      "text": "This is an example memory chunk for testing the on-chain storage system.",
+      "index": 0,
+      "metadata": {
+        "source": "example"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "entity-1",
+      "name": "Solana",
+      "type": "blockchain",
+      "description": "A high-performance blockchain platform"
+    },
+    {
+      "entity_id": "entity-2",
+      "name": "Cognee",
+      "type": "system",
+      "description": "A knowledge management system"
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "entity-1",
+      "target_id": "entity-2",
+      "relationship_name": "STORES",
+      "properties": {
+        "confidence": 0.9
+      }
+    }
+  ]
+}
+

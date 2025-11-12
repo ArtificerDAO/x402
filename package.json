@@ -1,0 +1,38 @@
+{
+  "name": "@onchain-memory/sdk",
+  "version": "1.0.0",
+  "description": "Store and retrieve Cognee memory data on Solana blockchain",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "upload": "node upload.js",
+    "download": "node download.js"
+  },
+  "keywords": [
+    "solana",
+    "blockchain",
+    "cognee",
+    "memory",
+    "storage",
+    "pinocchio",
+    "iqlabs"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@solana/web3.js": "^1.95.8",
+    "axios": "^1.7.9",
+    "uuid": "^11.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/uuid": "^10.0.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+

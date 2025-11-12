@@ -1,0 +1,49 @@
+{
+  "memory_id": "d6603c97-bf32-4a72-8e49-7a7c569f4ffe",
+  "user_id": "alice",
+  "created_at": "2025-11-10T19:32:23.829Z",
+  "updated_at": "2025-11-10T19:32:23.830Z",
+  "memory_type": "document",
+  "tags": [
+    "test",
+    "onchain"
+  ],
+  "chunks": [
+    {
+      "chunk_id": "5211b0b6-5cf6-4629-8fac-4f7da26a15df",
+      "text": "IPFS is a distributed file system for storing and accessing files",
+      "chunk_index": 0,
+      "chunk_size": 65,
+      "cut_type": "sentence",
+      "metadata": {
+        "source": "test"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "537907ba-0b7c-4765-8b31-2f0142688a9c",
+      "name": "IPFS",
+      "type": "Concept",
+      "description": "Concept from text: IPFS",
+      "metadata": {}
+    },
+    {
+      "entity_id": "37159492-6423-43b7-9636-333585dc089e",
+      "name": "distributed",
+      "type": "Concept",
+      "description": "Concept from text: distributed",
+      "metadata": {}
+    }
+  ],
+  "relationships": [
+    {
+      "source_id": "537907ba-0b7c-4765-8b31-2f0142688a9c",
+      "target_id": "37159492-6423-43b7-9636-333585dc089e",
+      "relationship_name": "RELATES_TO",
+      "properties": {
+        "confidence": 0.8
+      }
+    }
+  ]
+}

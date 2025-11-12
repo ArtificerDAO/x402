@@ -1,0 +1,52 @@
+{
+  "memory_id": "mem_example_1762811984557",
+  "user_id": "example_user",
+  "memory_type": "document",
+  "tags": [
+    "example",
+    "internet",
+    "web"
+  ],
+  "created_at": "2025-11-10T21:59:44.557Z",
+  "updated_at": "2025-11-10T21:59:44.559Z",
+  "chunks": [
+    {
+      "chunk_id": "chunk_example_1762811984559",
+      "text": "The Internet is a global network of computers that enables communication worldwide. Tim Berners-Lee invented the World Wide Web in 1989.",
+      "chunk_index": 0,
+      "embedding": [],
+      "metadata": {
+        "extracted_by": "eigen-ai",
+        "example": true
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": 1,
+      "name": "Internet",
+      "type": "Technology/Network",
+      "description": "A global network of computers that enables communication worldwide."
+    },
+    {
+      "entity_id": 2,
+      "name": "Tim Berners-Lee",
+      "type": "Person",
+      "description": "The inventor of the World Wide Web."
+    },
+    {
+      "entity_id": 3,
+      "name": "World Wide Web",
+      "type": "Technology/Website",
+      "description": "A system of interlinked hypertext documents invented by Tim Berners-Lee."
+    },
+    {
+      "entity_id": 4,
+      "name": "1989",
+      "type": "Date",
+      "description": "The year when the World Wide Web was invented."
+    }
+  ],
+  "relationships": [],
+  "embeddings": []
+}

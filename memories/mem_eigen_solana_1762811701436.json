@@ -1,0 +1,75 @@
+{
+  "memory_id": "mem_eigen_solana_1762811701436",
+  "user_id": "eigen_comprehensive_test",
+  "memory_type": "document",
+  "tags": [
+    "eigen-ai",
+    "solana",
+    "auto-extracted"
+  ],
+  "created_at": "2025-11-10T21:55:01.436Z",
+  "updated_at": "2025-11-10T21:55:01.436Z",
+  "chunks": [
+    {
+      "chunk_id": "chunk_solana_1762811701436",
+      "text": "Anatoly Yakovenko founded Solana in 2017. Solana is a high-performance blockchain that uses Proof of History consensus mechanism. The Solana network can process over 50,000 transactions per second.",
+      "chunk_index": 0,
+      "embedding": [],
+      "metadata": {
+        "extracted_by": "eigen-ai",
+        "model": "gpt-oss-120b-f16",
+        "document_title": "Solana"
+      }
+    }
+  ],
+  "entities": [
+    {
+      "entity_id": "ent_1",
+      "name": "Anatoly Yakovenko",
+      "type": "Person",
+      "description": "Founder of Solana blockchain."
+    },
+    {
+      "entity_id": "ent_2",
+      "name": "Solana",
+      "type": "Technology",
+      "description": "High-performance blockchain platform."
+    },
+    {
+      "entity_id": "ent_3",
+      "name": "Proof of History",
+      "type": "Concept",
+      "description": "Consensus mechanism used by Solana."
+    },
+    {
+      "entity_id": "ent_4",
+      "name": "Solana network",
+      "type": "Technology",
+      "description": "Solana blockchain network processing 50k TPS."
+    }
+  ],
+  "relationships": [
+    {
+      "relationship_id": "rel_1",
+      "source_id": "ent_1",
+      "target_id": "ent_2",
+      "relationship_name": "founded",
+      "confidence": 1
+    },
+    {
+      "relationship_id": "rel_2",
+      "source_id": "ent_2",
+      "target_id": "ent_3",
+      "relationship_name": "uses",
+      "confidence": 1
+    },
+    {
+      "relationship_id": "rel_3",
+      "source_id": "ent_4",
+      "target_id": "ent_2",
+      "relationship_name": "is_part_of",
+      "confidence": 0.98
+    }
+  ],
+  "embeddings": []
+}
